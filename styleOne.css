@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&family=Satisfy&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --light: 
+}
+
+body{
+    font-family: 'Rajdhani', sans-serif;
+    line-height: 1.5;
+}
+
+
+/* navbar */
+.navbar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(127, 255, 212, 0.527);
+    transition: all .5s ease;
+}
+
+.mark{
+    height: 70px;
+    background-color: cadetblue;
+}
+.navbar ul{
+    list-style: none;
+    font-size: 1.2em;
+
+}
+.navbar ul li a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    text-decoration: none;
+    color: black;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 0.726);
+    border-bottom: 1px solid rgb(36, 207, 173);
+    transition: .4s;
+
+}
+
+ul li:hover a{
+    padding-left: 50px;
+}
+
+.navbar ul a i{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+}
+
+label #btn, label #cancel{
+    position: fixed;
+    cursor: pointer;
+    border-radius: 3px;
+    left: 40px;
+    top: 25px;
+    
+}
+label #btn{
+    font-size: 30px;
+    padding: 6px 10px;
+    transition: all .5s;
+    
+    
+}
+label #cancel{
+    
+    background-color: rgba(189, 201, 202, 0.397);
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .navbar{
+    left: 0;
+}
+#check:checked~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+
+
+
+
+/* Showcase */
+
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(119, 127, 163, 0.315);
+    
+ 
+    
+}
+
+.main h1{
+    font-size: 4em;
+    font-family: 'Satisfy', cursive;
+    padding: 20px;
+    letter-spacing: 8px;
+    text-shadow: -5px -5px #fff;
+    text-decoration: underline;
+
+}
+
+.main p{
+    font-size: 1.4em;
+    letter-spacing: 5px;
+    padding-bottom: 30px;
+  
+    
+}
+.main i{
+    font-size: 3em;
+    color: black;
+    padding-right: 40px;
+    text-shadow: -5px -5px  white;
+}
+
+.main h1:hover{
+    color: tomato;
+    text-shadow: 15px -15px #fff;
+    font-size: 5em;
+    transition: .5s ease-out;
+    text-decoration: none;
+}
+.main p:hover{
+    color: rgba(29, 94, 13, 0.904);
+    transform: rotate(270deg);
+    letter-spacing: 10px;
+    
+}
+.main i:hover{
+    color: rgb(49, 18, 230);
+    text-shadow: 5px -5px #fff;
+    font-size: 4em;
+
+}
+
+/* About */
+#about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 40px;
+    margin: 50px;
+    height: 100vh;
+    
+    
+}
+#about h1{
+    grid-column: 1 / 3;
+    font-size: 4em;
+    text-align: center;
+    
+}
+#about img{
+    max-height: 40vh;
+    box-shadow: 15px 15px 8px rgba(75, 73, 60, 0.952);
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    text-align: justify;
+}
+
+/* Projects */
+
+#projects {
+    height: 100vh;
+    
+}
