@@ -306,6 +306,42 @@ label #cancel{
 .btn i:hover{
     transform: rotate(270deg);
 }
+.skills{
+    margin-top: 20px;
+    line-height: 2;
+    
+}
+
+.skills p:last-child{
+    font-size: 16px;
+}
+.brands{
+    text-align:  center;
+    margin-bottom: 15px;
+}
+.brands .fa-html5{
+    font-size: 1.6em;
+    padding: 4px 12px;
+    display: inline-block;
+    color: #f06529;
+    
+    
+}
+.brands .fa-css3{
+    font-size: 1.6em;
+    padding: 4px 12px;
+    display: inline-block;
+    color: #2965f1;
+    
+}
+.brands .fa-bootstrap{
+    font-size: 1.6em;
+    padding: 4px 12px;
+    display: inline-block;
+    color: #563d7c;
+    
+}
+
 
 /* Contact */
 #contact{
