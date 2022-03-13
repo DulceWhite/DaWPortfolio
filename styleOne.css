@@ -364,7 +364,6 @@ footer .fa-hand-holding-heart{
     color: rgba(226, 40, 40, 0.877);
 }
 
-
 /* Media Queries */
 @media screen and (min-width: 600px){
     /* About */
@@ -377,10 +376,10 @@ footer .fa-hand-holding-heart{
         font-size: 3em;
         width: 100%;
     }
-    
     #about img{
         max-height: 30vh;
     }
+
     /* Projects */
     .grid{
         display: flex;
@@ -390,6 +389,7 @@ footer .fa-hand-holding-heart{
         font-size: 3em;
         width: 100%;
     }
+    
     /* Contact */
     #contact h1{
         font-size: 3em;
