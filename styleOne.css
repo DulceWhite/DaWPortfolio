@@ -98,9 +98,6 @@ label #cancel{
     left: 195px;
 }
 
-
-
-
 /* Showcase */
 
 .main{
@@ -109,12 +106,8 @@ label #cancel{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(119, 127, 163, 0.315);
-    
- 
-    
+    background-color: rgba(119, 127, 163, 0.315);   
 }
-
 .main h1{
     font-size: 4em;
     font-family: 'Satisfy', cursive;
@@ -122,15 +115,11 @@ label #cancel{
     letter-spacing: 8px;
     text-shadow: -5px -5px #fff;
     text-decoration: underline;
-
 }
-
 .main p{
     font-size: 1.4em;
     letter-spacing: 5px;
-    padding-bottom: 30px;
-  
-    
+    padding-bottom: 30px;   
 }
 .main i{
     font-size: 3em;
@@ -149,14 +138,12 @@ label #cancel{
 .main p:hover{
     color: rgba(29, 94, 13, 0.904);
     transform: rotate(270deg);
-    letter-spacing: 10px;
-    
+    letter-spacing: 10px;  
 }
 .main i:hover{
     color: rgb(49, 18, 230);
     text-shadow: 5px -5px #fff;
     font-size: 4em;
-
 }
 
 /* About */
@@ -166,17 +153,14 @@ label #cancel{
     align-items: center;
     column-gap: 40px;
     margin: 50px;
-    height: 100vh;
-    
-    
+    height: 100vh; 
 }
 #about h1{
     grid-column: 1 / 3;
     font-size: 4em;
     text-align: center;
     background-image: linear-gradient(to right, transparent 50%, rgba(244, 172, 183, 0.5) 60%);
-    letter-spacing: 4px;
-    
+    letter-spacing: 4px;   
 }
 #about img{
     max-height: 40vh;
@@ -200,8 +184,7 @@ label #cancel{
     border-radius: 15px;
     background-color: #fff;
     border: none;
-    box-shadow: 9px 9px 4px rgba(54, 53, 44, 0.932);
-    
+    box-shadow: 9px 9px 4px rgba(54, 53, 44, 0.932);   
 }
 .about-container button:hover{
     box-shadow: 6px 6px rgba(54, 53, 44, 0.932);
@@ -209,10 +192,6 @@ label #cancel{
 }
 
 /* Projects */
-
-#projects {
-    
-}
 #projects  h1{
     height: auto;
     margin: 100px 50px;
@@ -221,8 +200,6 @@ label #cancel{
     background-image: linear-gradient(to left, transparent 50%, rgba(205, 218, 253, 0.5) 60%);
     letter-spacing: 4px;
 }
-
-
 .grid {
     display: grid;
     grid-template-areas: 
@@ -233,7 +210,6 @@ label #cancel{
     margin: 50px;
     font-size: 1.3em;    
 }
-
 .card{
     grid-area: card;
     padding: 12px;
@@ -242,8 +218,6 @@ label #cancel{
     box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.4);
     background-color: #cddafd;
 }
-
-
 .card1{
     grid-area: card1;
     padding: 12px;
@@ -275,7 +249,6 @@ label #cancel{
     background-color: #cddafd;
     box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.4);
 }
-
 .grid a{
     display: inline-block;
     text-decoration: none;
@@ -292,9 +265,7 @@ label #cancel{
     box-shadow: 5px 5px  #335c67
 }
 .grid a:active{
-    transition: .6s ease-out;
-    
-    
+    transition: .6s ease-out; 
 }
 .btn i{
     margin-left: 15px;
@@ -306,10 +277,8 @@ label #cancel{
 .skills{
     margin-top: 20px;
     line-height: 2;
-    border-top: solid 5px rgb(245, 236, 155);
-    
+    border-top: solid 5px rgb(245, 236, 155);  
 }
-
 .skills p:last-child{
     font-size: 16px;
 }
@@ -321,31 +290,25 @@ label #cancel{
     font-size: 1.6em;
     padding: 4px 12px;
     display: inline-block;
-    color: #f06529;
-    
-    
+    color: #f06529;   
 }
 .brands .fa-css3{
     font-size: 1.6em;
     padding: 4px 12px;
     display: inline-block;
-    color: #2965f1;
-    
+    color: #2965f1;  
 }
 .brands .fa-bootstrap{
     font-size: 1.6em;
     padding: 4px 12px;
     display: inline-block;
-    color: #563d7c;
-    
+    color: #563d7c;  
 }
-
 
 /* Contact */
 #contact{
     margin: 100px 50px 5px 50px;
     height: 80vh;
-
 }
 #contact h1{
     height: auto;
@@ -399,4 +362,37 @@ footer .fa-hand-holding-heart{
     font-size: 1.3em;
     padding: 0 8px;
     color: rgba(226, 40, 40, 0.877);
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 600px){
+    /* About */
+    #about{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+    }
+    #about h1{
+        font-size: 3em;
+        width: 100%;
+    }
+    
+    #about img{
+        max-height: 30vh;
+    }
+    /* Projects */
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+    #projects h1{
+        font-size: 3em;
+        width: 100%;
+    }
+    /* Contact */
+    #contact h1{
+        font-size: 3em;
+        width: 100%;
+    }
 }
