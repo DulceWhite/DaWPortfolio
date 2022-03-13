@@ -215,7 +215,7 @@ label #cancel{
     padding: 12px;
     margin-bottom: 50px;
     text-align: justify;
-    box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.4);
     background-color: #cddafd;
 }
 .card1{
@@ -223,7 +223,7 @@ label #cancel{
     padding: 12px;
     margin-bottom: 50px;
     text-align: justify;
-    box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.4);
     background-color: #cddafd;
 }
 .card2{
@@ -231,7 +231,7 @@ label #cancel{
     padding: 12px;
     margin-bottom: 50px;
     text-align: justify;
-    box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.4);
     background-color: #cddafd;
 }
 .card3{
@@ -240,14 +240,19 @@ label #cancel{
     margin-bottom: 50px;
     text-align: justify;
     background-color: #cddafd;
-    box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.4);
+}
+.grid > section:hover{
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
+    transition: all .3s ease-in-out;
+
 }
 .btn{
     grid-area: btn;
     text-align: center;
     padding: 12px;
     background-color: #cddafd;
-    box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.4);
 }
 .grid a{
     display: inline-block;
@@ -303,6 +308,13 @@ label #cancel{
     padding: 4px 12px;
     display: inline-block;
     color: #563d7c;  
+}
+.brands .fa-js{
+    font-size: 1.6em;
+    padding: 0;
+    display: inline-block;
+    background-color: black;
+    color: #f0db4f;  
 }
 
 /* Contact */
@@ -365,7 +377,17 @@ footer .fa-hand-holding-heart{
 }
 
 /* Media Queries */
-@media screen and (min-width: 600px){
+@media screen and (max-width: 780px){
+
+
+    /* showcase */
+    .main h1{
+        font-size: 3em;
+    }
+    .main h1:hover{
+        font-size: 3em;
+    }
+    
     /* About */
     #about{
        display: flex;
