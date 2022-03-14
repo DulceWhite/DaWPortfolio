@@ -15,12 +15,13 @@ body{
 }
 
 
+
 /* navbar */
 .navbar{
     position: fixed;
     left: -250px;
     width: 250px;
-    height: 100%;
+    height: auto;
     background-color: rgba(127, 255, 212, 0.527);
     transition: all .5s ease;
 }
@@ -52,6 +53,7 @@ body{
 
 ul li:hover a{
     padding-left: 50px;
+    font-weight: 700;
 }
 
 .navbar ul a i{
@@ -73,12 +75,11 @@ label #btn{
     font-size: 30px;
     padding: 6px 10px;
     transition: all .5s;
-    
+    top: 17px;
     
 }
 label #cancel{
     
-    background-color: rgba(189, 201, 202, 0.397);
     z-index: 1111;
     left: -195px;
     top: 17px;
@@ -99,9 +100,6 @@ label #cancel{
     left: 195px;
 }
 
-
-
-
 /* Showcase */
 
 .main{
@@ -110,12 +108,8 @@ label #cancel{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(119, 127, 163, 0.315);
-    
- 
-    
+    background-color: rgba(119, 127, 163, 0.315);   
 }
-
 .main h1{
     font-size: 4em;
     font-family: 'Satisfy', cursive;
@@ -123,15 +117,11 @@ label #cancel{
     letter-spacing: 8px;
     text-shadow: -5px -5px #fff;
     text-decoration: underline;
-
 }
-
 .main p{
     font-size: 1.4em;
     letter-spacing: 5px;
-    padding-bottom: 30px;
-  
-    
+    padding-bottom: 30px;   
 }
 .main i{
     font-size: 3em;
@@ -150,14 +140,12 @@ label #cancel{
 .main p:hover{
     color: rgba(29, 94, 13, 0.904);
     transform: rotate(270deg);
-    letter-spacing: 10px;
-    
+    letter-spacing: 10px;  
 }
 .main i:hover{
     color: rgb(49, 18, 230);
     text-shadow: 5px -5px #fff;
     font-size: 4em;
-
 }
 
 /* About */
@@ -167,15 +155,24 @@ label #cancel{
     align-items: flex-start;
     column-gap: 40px;
     margin: 50px;
+<<<<<<< HEAD
     height: 100vh;
     
+=======
+    height: 100vh; 
+>>>>>>> mediaQueries
 }
 #about h1{
     grid-column: 1 / 3;
     font-size: 4em;
     text-align: center;
+<<<<<<< HEAD
     align-self: center;
     background-image: linear-gradient(to right, transparent 50%, rgba(75, 230, 253, 0.5) 50%);
+=======
+    background-image: linear-gradient(to right, transparent 50%, rgba(244, 172, 183, 0.5) 60%);
+    letter-spacing: 4px;   
+>>>>>>> mediaQueries
 }
 
 
@@ -194,7 +191,23 @@ label #cancel{
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
+    padding: 15px;
     text-align: justify;
+    background-color: rgba(244, 172, 183, 0.5);
+    box-shadow: 8px 8px 3px rgba(75, 73, 60, 0.952);
+}
+.about-container button{
+    padding: 8px 15px;
+    margin: 20px;
+    font-size: 1.2em;
+    border-radius: 15px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 9px 9px 4px rgba(54, 53, 44, 0.932);   
+}
+.about-container button:hover{
+    box-shadow: 6px 6px rgba(54, 53, 44, 0.932);
+    transition: all .4s ease;
 }
 #about a{
     background-color: rgba(56, 115, 170, 0.541);
@@ -211,7 +224,61 @@ label #cancel{
 
 
 /* Projects */
+#projects  h1{
+    height: auto;
+    margin: 100px 50px;
+    font-size: 4em;
+    text-align: center;
+    background-image: linear-gradient(to left, transparent 50%, rgba(205, 218, 253, 0.5) 60%);
+    letter-spacing: 4px;
+}
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "card card card1 card1"
+    "card2 card2 card3 card3"
+    "btn btn btn btn";
+    grid-gap: 40px;
+    margin: 50px;
+    font-size: 1.3em;    
+}
+.card{
+    grid-area: card;
+    padding: 12px;
+    margin-bottom: 50px;
+    text-align: justify;
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.4);
+    background-color: #cddafd;
+}
+.card1{
+    grid-area: card1;
+    padding: 12px;
+    margin-bottom: 50px;
+    text-align: justify;
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.4);
+    background-color: #cddafd;
+}
+.card2{
+    grid-area: card2;
+    padding: 12px;
+    margin-bottom: 50px;
+    text-align: justify;
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.4);
+    background-color: #cddafd;
+}
+.card3{
+    grid-area: card3;
+    padding: 12px;
+    margin-bottom: 50px;
+    text-align: justify;
+    background-color: #cddafd;
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.4);
+}
+.grid > section:hover{
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
+    transition: all .3s ease-in-out;
 
+<<<<<<< HEAD
 #projects {
     height: 100vh;
     display: grid;
@@ -242,4 +309,177 @@ label #cancel{
 
 #project img{
     background-image: cover;
+=======
+}
+.btn{
+    grid-area: btn;
+    text-align: center;
+    padding: 12px;
+    background-color: #cddafd;
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.4);
+}
+.grid a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 12px;
+    margin: 15px;
+    color: black;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 8px 8px 4px #335c67;
+}
+.grid a:hover{
+    background-color: rgb(245, 236, 155);
+    transition: .3s ease-in-out;
+    box-shadow: 5px 5px  #335c67
+}
+.grid a:active{
+    transition: .6s ease-out; 
+}
+.btn i{
+    margin-left: 15px;
+    font-size: 1.3em;  
+}
+.btn i:hover{
+    transform: rotate(90deg);
+}
+.skills{
+    margin-top: 20px;
+    line-height: 2;
+    border-top: solid 5px rgb(245, 236, 155);  
+}
+.skills p:last-child{
+    font-size: 16px;
+}
+.brands{
+    text-align:  center;
+    margin-bottom: 15px;
+}
+.brands .fa-html5{
+    font-size: 1.6em;
+    padding: 4px 12px;
+    display: inline-block;
+    color: #f06529;   
+}
+.brands .fa-css3{
+    font-size: 1.6em;
+    padding: 4px 12px;
+    display: inline-block;
+    color: #2965f1;  
+}
+.brands .fa-bootstrap{
+    font-size: 1.6em;
+    padding: 4px 12px;
+    display: inline-block;
+    color: #563d7c;  
+}
+.brands .fa-js{
+    font-size: 1.6em;
+    padding: 0;
+    display: inline-block;
+    background-color: black;
+    color: #f0db4f;  
+}
+
+/* Contact */
+#contact{
+    margin: 100px 50px 5px 50px;
+    height: 80vh;
+}
+#contact h1{
+    height: auto;
+    font-size: 4em;
+    text-align: center;
+    background-image: linear-gradient(to right, transparent 50%, rgba(0, 196, 154, 0.5) 60%);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    letter-spacing: 4px;
+}
+#contact p{
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 2;
+    padding: 20px;
+}
+#contact p a{
+    text-decoration: none;
+    font-weight: bolder;
+    /* background-color: rgba(102, 51, 153, 0.295); */
+    color: rgb(0, 196, 154);
+    padding: 8px 15px;
+    border-radius: 15px;
+    letter-spacing: 2px;
+}
+#contact p i{
+    padding-left:12px;
+    color: rgb(113, 22, 189);
+}
+
+/* Footer */
+footer{
+    background-color: rgba(119, 127, 163, 0.315);
+    height: 100px;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .fa-html5{
+    font-size: 1.3em;
+    padding: 0 8px;
+    color: #f06529;
+}
+footer .fa-css3{
+    font-size: 1.3em;
+    padding: 0 8px;
+    color: #2965f1;
+}
+footer .fa-hand-holding-heart{
+    font-size: 1.3em;
+    padding: 0 8px;
+    color: rgba(226, 40, 40, 0.877);
+}
+
+/* Media Queries */
+@media screen and (max-width: 780px){
+
+
+    /* showcase */
+    .main h1{
+        font-size: 3em;
+    }
+    .main h1:hover{
+        font-size: 3em;
+    }
+    
+    /* About */
+    #about{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+    }
+    #about h1{
+        font-size: 3em;
+        width: 100%;
+    }
+    #about img{
+        max-height: 30vh;
+    }
+
+    /* Projects */
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+    #projects h1{
+        font-size: 3em;
+        width: 100%;
+    }
+    
+    /* Contact */
+    #contact h1{
+        font-size: 3em;
+        width: 100%;
+    }
+>>>>>>> mediaQueries
 }
