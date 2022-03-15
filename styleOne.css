@@ -290,6 +290,7 @@ label #cancel{
     background-color: rgb(245, 236, 155);
     transition: .3s ease-in-out;
     box-shadow: 5px 5px  #335c67
+    
 }
 .grid a:active{
     transition: .6s ease-out; 
@@ -298,7 +299,7 @@ label #cancel{
     margin-left: 15px;
     font-size: 1.3em;  
 }
-.btn i:hover{
+.grid > section:hover .fa-hand-pointer{
     transform: rotate(90deg);
 }
 .skills{
