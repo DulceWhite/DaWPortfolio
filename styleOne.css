@@ -110,15 +110,15 @@ label #cancel{
     align-items: center;
     background-color: rgba(119, 127, 163, 0.315);   
 }
-.main h1{
-    font-size: 4em;
+.main h1 a{
+    font-size: 3em;
     font-family: 'Satisfy', cursive;
     padding: 20px;
     letter-spacing: 8px;
     text-shadow: -5px -5px #fff;
     text-decoration: underline;
 }
-.main p{
+.main .title{
     font-size: 1.4em;
     letter-spacing: 5px;
     padding-bottom: 30px;   
@@ -130,14 +130,14 @@ label #cancel{
     text-shadow: -5px -5px  white;
 }
 
-.main h1:hover{
+.main h1 a:hover{
     color: tomato;
     text-shadow: 15px -15px #fff;
-    font-size: 5em;
+    font-size: 4em;
     transition: .5s ease-out;
     text-decoration: none;
 }
-.main p:hover{
+.main .title:hover{
     color: rgba(29, 94, 13, 0.904);
     transform: rotate(270deg);
     letter-spacing: 10px;  
@@ -146,6 +146,45 @@ label #cancel{
     color: rgb(49, 18, 230);
     text-shadow: 5px -5px #fff;
     font-size: 4em;
+}
+/* Gif */
+
+.ndg{
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    transform: rotate(0);
+    letter-spacing: 2px;
+
+    /* animation */
+   animation-name: rolling, stop, go;
+   animation-duration: 5s, 6s, 5s;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: infinite;
+   animation-fill-mode: forwards;
+
+
+}
+@keyframes rolling{
+    0%{
+        transform: translate(-200px)rotate(0deg);
+    }
+    50%{
+        transform: translate(400px)rotate(0deg);
+    }
+}
+@keyframes stop{
+    50%{
+        transform: translate(480px)rotate(0deg);
+    }
+}
+@keyframes go{
+    50%{
+        transform: translate(480px)rotate(0deg);
+    }
+    100%{
+        transform: translate(1000px)rotate(0deg);
+    }
 }
 
 /* About */
