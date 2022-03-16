@@ -157,35 +157,26 @@ label #cancel{
     letter-spacing: 2px;
 
     /* animation */
-   animation-name: rolling, stop, go;
-   animation-duration: 5s, 6s, 5s;
-   animation-timing-function: ease-in-out;
+   animation-name: rolling;
+   animation-duration: 15s;
+   animation-delay: 2s;
+   animation-timing-function: linear;
    animation-iteration-count: infinite;
-   animation-fill-mode: forwards;
-
-
+   animation-fill-mode:backwards;
 }
 @keyframes rolling{
     0%{
-        transform: translate(-200px)rotate(0deg);
+        left: 50px;
     }
     50%{
-        transform: translate(400px)rotate(0deg);
-    }
-}
-@keyframes stop{
-    50%{
-        transform: translate(480px)rotate(0deg);
-    }
-}
-@keyframes go{
-    50%{
-        transform: translate(480px)rotate(0deg);
+        left: 80%;
     }
     100%{
-        transform: translate(1000px)rotate(0deg);
+        left:50px;
+
     }
 }
+
 
 /* About */
 #about{
