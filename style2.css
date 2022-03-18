@@ -1,1 +1,26 @@
 /* Second style Sheet, New NAvbar */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&family=Satisfy&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --light: 
+}
+
+body{
+    font-family: 'Rajdhani', sans-serif;
+    line-height: 1.5;
+    
+}
+
+.parallax {
+    background-image: url("Images/IMG-1946.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
