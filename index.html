@@ -175,13 +175,15 @@
         <form action="">
             <h2>Leave me a message!</h2>
             <label for="name"> Name
-                <input type="text">
+                <input type="text" required>
             </label>
             <label for="email"> Email
-                <input type="email">
+                <input type="email" required>
             </label>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your message goes here..."></textarea>
-            <button type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+            <label for="message"> Message
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your message goes here..."></textarea>
+            </label>
+            <button type="submit">Submit <i class="fa-regular fa-paper-plane"></i></button>
         </form>
        
     </section>
