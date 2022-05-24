@@ -170,20 +170,22 @@
 
     <section>
         <h1>Get In Touch</h1>
-        <p>I'm currently looking for full-time web developer opportunities! If you know of any positions available, have any questions or just want to say hello. Please feel free to email me! <i class="fa-solid fa-paper-plane"></i><a href="dulce.a.suarez@gmail.com"> dulce.a.suarez@gmail.com</a></i> </p>
-        <form action="https://formsubmit.co/dulce.a.suarez@gmail.com" method="POST">
-            <h2>Leave me a message!</h2>
-            <label for="name"> Name
-                <input type="text" required>
-            </label>
-            <label for="email"> Email
-                <input type="email" required>
-            </label>
-            <label for="message"> Message
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Your message goes here..."></textarea>
-            </label>
-            <button type="submit">Submit <i class="fa-regular fa-paper-plane"></i></button>
-        </form>
+        <p>I'm currently looking for full-time web developer opportunities! If you know of any positions available, have any questions or just want to say hello. Please feel free to email me! <br> <i class="fa-solid fa-paper-plane"></i><a href="dulce.a.suarez@gmail.com"> dulce.a.suarez@gmail.com</a> </p>
+        <div class="form-container">
+            <form action="https://formsubmit.co/dulce.a.suarez@gmail.com" method="POST">
+                <h2>Leave me a message!</h2>
+                <div class="form-control">
+                    <input type="text" id="name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-control">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <textarea name="text" id="text" cols="30" rows="10" placeholder="Leave your message here.."></textarea>
+                <input type="submit" value="Send" class="submit">
+            </form>
+        </div>
        
     </section>
 
@@ -197,6 +199,6 @@
           <p>  by Dulce White 2022 <i class="fa-solid fa-hand-holding-heart"></i> chaA!</p>
 </footer>
 
-
+<script src="app.js"></script>
 </body>
 </html>
