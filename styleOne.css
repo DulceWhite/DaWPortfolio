@@ -249,8 +249,8 @@ border-radius: 50%;
 }
 
 .bat img:hover{
-    transition: 1s ease-in-out;
-    transform: translate(-50px, -50px);
+    transition: 2s ease-in-out;
+    transform: translateX(-50px);
     
 }
 
