@@ -260,7 +260,7 @@ border-radius: 50%;
     min-height: 100vh;
     padding: 100px 0;
 }
-#projects  h1{
+#projects  .projectsTitle{
     height: auto;
     margin: 00px 50px;
     font-size: 4em;
@@ -268,86 +268,7 @@ border-radius: 50%;
     background-image: linear-gradient(to right, transparent 50%, rgba(205, 218, 253, 0.5) 60%);
     letter-spacing: 4px;
 }
-.grid {
-    display: grid;
-    grid-template-areas: 
-    "card card card1 card1"
-    "card2 card2 card3 card3"
-    "btn btn btn btn";
-    grid-gap: 40px;
-    margin: 50px;
-    font-size: 1.3em;    
-}
-.card{
-    grid-area: card;
-    padding: 12px;
-    margin-bottom: 50px;
-    text-align: justify;
-    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.4);
-    background-color: #cddafd;
-}
-.card1{
-    grid-area: card1;
-    padding: 12px;
-    margin-bottom: 50px;
-    text-align: justify;
-    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.4);
-    background-color: #cddafd;
-}
-.card2{
-    grid-area: card2;
-    padding: 12px;
-    margin-bottom: 50px;
-    text-align: justify;
-    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.4);
-    background-color: #cddafd;
-}
-.card3{
-    grid-area: card3;
-    padding: 12px;
-    margin-bottom: 50px;
-    text-align: justify;
-    background-color: #cddafd;
-    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.4);
-}
-.grid > section:hover{
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
-    transition: all .3s ease-in-out;
 
-}
-.btn{
-    grid-area: btn;
-    text-align: center;
-    padding: 12px;
-    background-color: #cddafd;
-    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.4);
-}
-.grid a{
-    display: inline-block;
-    text-decoration: none;
-    padding: 5px 12px;
-    margin: 15px;
-    color: black;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 8px 8px 4px #335c67;
-}
-.grid a:hover{
-    background-color: rgb(245, 236, 155);
-    transition: .3s ease-in-out;
-    box-shadow: 5px 5px  #335c67
-    
-}
-.grid a:active{
-    transition: .6s ease-out; 
-}
-.btn i{
-    margin-left: 15px;
-    font-size: 1.3em;  
-}
-.grid > section:hover .fa-hand-pointer{
-    transform: rotate(90deg);
-}
 .skills{
     margin-top: 20px;
     line-height: 2;
@@ -640,48 +561,48 @@ label #cancel{
 #check:checked ~ .navbar ul li a{
     display: none;
 }
-    /* showcase */
-    .main h1 a{
-        font-size: 2em;
-    }
-   
-    .main h1 a:hover{
-        color: tomato;
-        text-shadow: 15px -15px #fff;
-        font-size: 2.5em;
-        transition: .5s ease-out;
-        text-decoration: none;
-    }
-    
-    /* About */
-    #about{
-       display: flex;
-       flex-direction: column;
-       justify-content: space-evenly;
-    }
-    #about h1 {
-        font-size: 3em;
-        width: 100%;
-        margin-bottom: 50px;
-    }
-    #about img{
-        max-height: 30vh;
-        margin: 50px auto;
-    }
-
-    /* Projects */
-    .grid{
-        display: flex;
-        flex-direction: column;
-    }
-    #projects h1{
-        font-size: 3em;
-        width: 100%;
-    }
-    
-    /* Contact */
-    #contact h1{
-        font-size: 3em;
-        width: 100%;
-    }
+/* showcase */
+.main h1 a{
+    font-size: 2em;
 }
+
+.main h1 a:hover{
+    color: tomato;
+    text-shadow: 15px -15px #fff;
+    font-size: 2.5em;
+    transition: .5s ease-out;
+    text-decoration: none;
+}
+
+/* About */
+#about{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+#about h1 {
+    font-size: 3em;
+    width: 100%;
+    margin-bottom: 50px;
+}
+#about img{
+    max-height: 30vh;
+    margin: 50px auto;
+}
+/* Projects */
+.grid{
+    display: flex;
+    flex-direction: column;
+}
+#projects h1{
+    font-size: 3em;
+    width: 100%;
+}
+
+/* Contact */
+#contact h1{
+        font-size: 3em;
+        width: 100%;
+}
+}
+
